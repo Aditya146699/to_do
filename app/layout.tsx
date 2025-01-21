@@ -57,7 +57,7 @@ export default function RootLayout({
     </div>
   </div>
   <div className="navbar-center">
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-xl">TO DO'S</a>
   </div>
   <div className="navbar-end">
 
