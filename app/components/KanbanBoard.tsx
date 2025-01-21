@@ -1,5 +1,4 @@
 'use client';
-
 import { FC, useState, useEffect } from 'react';
 
 // Task type representing a task's structure
@@ -164,7 +163,7 @@ const KanbanBoard: FC = () => {
   };
 
   return (
-    <div className="flex p-4">
+    <div className="flex p-4 max-[600px]:flex-col">
       {/* Modal for adding new tasks */}
       <label htmlFor="my_modal_6" className="btn btn-primary absolute bottom-5 right-5">
         ➕
@@ -203,7 +202,7 @@ const KanbanBoard: FC = () => {
       {columns.map((column) => (
         <div
           key={column.id}
-          className="w-1/3 card bg-base-200 p-4 rounded-lg m-2"
+          className="w-1/3 card bg-base-200 p-4 rounded-lg m-2 max-[600px]:w-full max-[600px]:mx-0"
           onDragOver={(e) => e.preventDefault()} // Allow dropping of tasks by preventing default behavior
           onDrop={(e) => onDrop(e, column.id)} // Handle task drop into the column
         >
